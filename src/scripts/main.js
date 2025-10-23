@@ -18,7 +18,7 @@ inputs.forEach((input) => {
     capitalizeFirstLetter(input.getAttribute('name')),
   );
 
-  input.parentElement.append(label);
+  input.parentElement.prepend(label);
 });
 
 function capitalizeFirstLetter(val) {
